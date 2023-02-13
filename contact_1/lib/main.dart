@@ -10,9 +10,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      home: Center(
-        child: Container( width: 50, height: 50, color: Colors.blue) // Flutter의 사이즈 단위는 LP, 50LP = 1.2cm // Image.asset('JYP.jpg') // Icon(Icons.star) // Text('안녕')
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Container(),
+        bottomNavigationBar: BottomAppBar( child: Text("Hello"),
       )
+    )
     );
   }
 }
