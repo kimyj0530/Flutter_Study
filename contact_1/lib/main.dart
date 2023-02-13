@@ -11,14 +11,25 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center, // Ctrl + Space 자동완성
-          children: [
-          Icon(Icons.star),
-          Icon(Icons.star),
-          Icon(Icons.star),
-        ],
-      )
+        appBar: AppBar(
+          title: Text('앱임')
+        ),
+        body: Container(
+          child: Text('안녕')
+        ),
+        bottomNavigationBar: BottomAppBar(
+          child: Container(
+            height: 50.0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.phone),
+                Icon(Icons.message),
+                Icon(Icons.contact_page),
+              ],
+            )
+          )
+        )
     )
     );
   }
