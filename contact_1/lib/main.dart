@@ -14,10 +14,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('앱임')
         ),
-        body: Container(
-          width: 150, height: 50, //color: Colors.blue, // 중복오류 방지를 위해 Color를 사용하면 오류 뜸
-          decoration: BoxDecoration(
-            border: Border.all(color:Colors.black)
+        body: Align( // Center: 가운데 정렬
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            width: double.infinity, height: 50, color: Colors.blue, // double.infinity: 무한
+
           ),
         ),
 
