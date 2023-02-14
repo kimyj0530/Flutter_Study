@@ -15,21 +15,11 @@ class MyApp extends StatelessWidget {
           title: Text('앱임')
         ),
         body: Container(
-          child: Text('안녕')
+          width: 150, height: 50, color: Colors.blue,
+          padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+          child: Text('ddddd'), // 여백이 없다면 구석에서 부터 출력됨
         ),
-        bottomNavigationBar: BottomAppBar(
-          child: Container(
-            height: 50.0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(Icons.phone),
-                Icon(Icons.message),
-                Icon(Icons.contact_page),
-              ],
-            )
-          )
-        )
+
     )
     );
   }
