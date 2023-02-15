@@ -12,7 +12,11 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(title: Text('앱임')),
           body: SizedBox(
-            child: Icon(Icons.star), // 아이콘은 size와 color만 가능함
+            child: ElevatedButton(
+              child: Text('글자'),
+                onPressed: (){},
+                style: ButtonStyle(),
+            )//TextButton(), IconButton(), ElevatedButton() 버튼넣고 싶을 떄 택1
           ),
         )
     );
