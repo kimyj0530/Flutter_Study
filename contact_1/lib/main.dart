@@ -10,14 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(title: Text('앱임')),
-          body: SizedBox(
-            child: ElevatedButton(
-              child: Text('글자'),
-                onPressed: (){},
-                style: ButtonStyle(),
-            )//TextButton(), IconButton(), ElevatedButton() 버튼넣고 싶을 떄 택1
-          ),
+          appBar: AppBar( actions: [Icon(Icons.star), Icon(Icons.star)], leading: Icon(Icons.star), title: Text('ddd'), ),
+          body: SizedBox(),
         )
     );
   }
