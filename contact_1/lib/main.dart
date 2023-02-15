@@ -8,21 +8,15 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('앱임')
-        ),
-        body: Align( // Center: 가운데 정렬
-          alignment: Alignment.bottomCenter,
-          child: Container(
-            width: double.infinity, height: 50, color: Colors.blue, // double.infinity: 무한
-
+        home: Scaffold(
+          appBar: AppBar(title: Text('앱임')),
+          body: SizedBox(
+            child: Text('안녕하세요',
+              style: TextStyle(color: Color(0xffe00101), fontSize: 50, fontWeight: ),
+            ),
           ),
-        ),
-
-    )
+        )
     );
   }
 }
