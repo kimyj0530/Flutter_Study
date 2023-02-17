@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(),
         body: Row(
           children: [
-            Flexible(child: Container(color: Colors.blue), flex: 3),
-            Flexible(child: Container(color: Colors.green), flex: 7),
+            Expanded(child: Container(color: Colors.blue)), // ROW()안에서 박스 하나만 꽉채우고 싶다면 Expanded()
+            Container(width: 100, color: Colors.green),
           ],
         )
       ),
