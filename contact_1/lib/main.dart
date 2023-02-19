@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: Row(
+        body: Column(
           children: [
             Expanded(child: Container(color: Colors.blue)), // ROW()안에서 박스 하나만 꽉채우고 싶다면 Expanded()
             Container(width: 100, color: Colors.green),
